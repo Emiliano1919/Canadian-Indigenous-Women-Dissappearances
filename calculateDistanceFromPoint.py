@@ -10,6 +10,7 @@ original_location = Point(latitude, longitude)
 distance_km = 10
 
 # Calculate new coordinates 10 km west (bearing 270 degrees)
+#for north west 315 degrees approx 
 destination = geodesic(kilometers=distance_km).destination(original_location, bearing=270)
 
 new_latitude = destination.latitude
